@@ -375,7 +375,7 @@ const Dashboard = () => {
                         ))}
                         {project.technologies.length > 3 && (
                           <Badge variant="secondary" className="text-xs">
-                            +{project.technologies.length - 3} more
+                            +{project.technologies.length - 3}
                           </Badge>
                         )}
                       </div>

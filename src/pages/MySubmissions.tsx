@@ -133,7 +133,7 @@ const MySubmissions = () => {
                     ))}
                     {project.technologies.length > 5 && (
                       <Badge variant="outline" className="text-xs">
-                        +{project.technologies.length - 5} more
+                        +{project.technologies.length - 5}
                       </Badge>
                     )}
                   </div>

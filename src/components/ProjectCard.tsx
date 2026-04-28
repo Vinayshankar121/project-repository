@@ -27,7 +27,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
           {project.technologies.length > 4 && (
             <span className="text-xs text-muted-foreground self-center">
-              +{project.technologies.length - 4} more
+              +{project.technologies.length - 4}
             </span>
           )}
         </div>
