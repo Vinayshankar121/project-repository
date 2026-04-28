@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Premium Deep Navy & Gold Theme */
+    --background: 222 47% 11%;
+    --foreground: 40 33% 95%;
+
+    --card: 222 41% 14%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 222 41% 14%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 40 33% 95%;
+
+    --muted: 222 30% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 33% 95%;
+
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 47% 9%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 30% 16%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 43 74% 49%;
+    
+    /* Custom premium tokens */
+    --gold: 43 74% 49%;
+    --gold-light: 43 74% 60%;
+    --navy: 222 47% 11%;
+    --navy-light: 222 41% 18%;
+  }
+
+  .dark {
+    /* Same premium theme - dark by default */
+    --background: 222 47% 11%;
+    --foreground: 40 33% 95%;
+
+    --card: 222 41% 14%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 222 41% 14%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 40 33% 95%;
+
+    --muted: 222 30% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 33% 95%;
+
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 43 74% 49%;
+    
+    --sidebar-background: 222 47% 9%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 30% 16%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 43 74% 49%;
+    
+    --gold: 43 74% 49%;
+    --gold-light: 43 74% 60%;
+    --navy: 222 47% 11%;
+    --navy-light: 222 41% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
